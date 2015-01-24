@@ -264,9 +264,9 @@ h2 {
 }
 
 /* line 355, ../sass/main.scss */
-#in path {
+#in svg {
   transition: fill .4s ease;
-  fill: EFEFEF;
+  fill: #EFEFEF;
 }
 
 /* line 359, ../sass/main.scss */
