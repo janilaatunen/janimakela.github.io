@@ -1,0 +1,468 @@
+/*****************************************************************************/
+/*
+/* Layout tweaks
+/*
+/*****************************************************************************/
+/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* line 9, ../sass/main.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Global reset */
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 22, ../sass/main.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 26, ../sass/main.scss */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+/* line 33, ../sass/main.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*****************************************************************************/
+/*
+/* Variables
+/*
+/*****************************************************************************/
+/*****************************************************************************/
+/*
+/* Fonts
+/*
+/*****************************************************************************/
+@font-face {
+  font-family: 'League Gothic';
+  src: url("/fonts/league-gothic.woff") format("woff"), url("/fonts/league-gothic.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Knewave';
+  src: url("/fonts/knewave.woff") format("woff"), url("/fonts/knewave.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Chunk';
+  src: url("/fonts/chunk.woff") format("woff"), url("/fonts/chunk.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Nanum Pen Script';
+  src: url("/fonts/nanum-pen-script.ttf") format("truetype");
+}
+/*****************************************************************************/
+/*
+/* Text
+/*
+/*****************************************************************************/
+/* line 85, ../sass/main.scss */
+html {
+  font-size: 14px;
+}
+@media screen and (min-width: 600px) {
+  /* line 85, ../sass/main.scss */
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  /* line 85, ../sass/main.scss */
+  html {
+    font-size: 20px;
+  }
+}
+
+/* line 96, ../sass/main.scss */
+body {
+  font-size: 100%;
+}
+
+/* line 101, ../sass/main.scss */
+h1 {
+  max-width: 60rem;
+  text-align: center;
+}
+
+/* line 116, ../sass/main.scss */
+h2 {
+  text-align: center;
+}
+
+/* line 143, ../sass/main.scss */
+.hero-text {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+  text-align: center;
+  /* margin-right: 4rem; */
+  color: #FFFFFF;
+  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
+  -ms-transform: rotate(-4deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-4deg);
+  /* Safari and Chrome */
+  transform: rotate(-4deg);
+}
+@media screen and (max-width: 600px) {
+  /* line 143, ../sass/main.scss */
+  .hero-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* line 161, ../sass/main.scss */
+#first-page, #second-page, #third-page, #fourth-page {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+/* line 172, ../sass/main.scss */
+.arrow-down, .arrow-up {
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 179, ../sass/main.scss */
+.arrow-down img, .arrow-up img {
+  width: 8rem;
+}
+
+/* line 185, ../sass/main.scss */
+#first-page {
+  width: 100%;
+  background-color: #941751;
+}
+/* line 197, ../sass/main.scss */
+#first-page h1 {
+  width: 100%;
+  max-width: 60rem;
+  margin: auto;
+  color: #FFFFFF;
+  font-family: 'League Gothic', Verdana, sans-serif;
+  font-size: 7rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 208, ../sass/main.scss */
+#first-page span {
+  color: #000000;
+}
+
+/* line 213, ../sass/main.scss */
+#second-page {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: #2ABCC9;
+}
+/* line 223, ../sass/main.scss */
+#second-page h1 {
+  margin: auto;
+  color: #000000;
+  font-family: 'Knewave', Verdana, sans-serif;
+  font-size: 3rem;
+  -ms-transform: rotate(-4deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-4deg);
+  /* Safari and Chrome */
+  transform: rotate(-4deg);
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 235, ../sass/main.scss */
+#second-page span {
+  color: #FFFFFF;
+}
+
+/* line 240, ../sass/main.scss */
+#third-page {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: #141920;
+}
+/* line 251, ../sass/main.scss */
+#third-page h1 {
+  margin: auto;
+  color: #FFFFFF;
+  font-family: 'League Gothic', Verdana, sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+/* line 259, ../sass/main.scss */
+#third-page span {
+  font-size: 6rem;
+  clear: both;
+  color: #C1392C;
+  font-family: 'Chunk', Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 268, ../sass/main.scss */
+#fourth-page {
+  background: url(/img/road.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 276, ../sass/main.scss */
+#fourth-page #last-text {
+  margin: auto;
+}
+/* line 284, ../sass/main.scss */
+#fourth-page h1 {
+  color: #FFFFFF;
+  font-family: 'League Gothic', Verdana, sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
+}
+/* line 293, ../sass/main.scss */
+#fourth-page h2 {
+  color: #FFFFFF;
+  font-family: 'Nanum Pen Script', 'League Gothic', Verdana, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
+}
+/* line 303, ../sass/main.scss */
+#fourth-page img, #fourth-page svg {
+  width: 64px;
+  height: 64px;
+}
+/* line 308, ../sass/main.scss */
+#fourth-page a + a {
+  margin-left: 20px;
+}
+
+/* line 318, ../sass/main.scss */
+#rest-of-content {
+  max-width: 60rem;
+  margin: 4em auto 0;
+  /*  background-color: rgba(10,10,10,0.95); */
+  background-color: #FFFFFF;
+}
+
+/* line 325, ../sass/main.scss */
+.wrapper {
+  max-width: 60em;
+  background-color: #FFFFFF;
+}
+
+/* line 355, ../sass/main.scss */
+#in path {
+  transition: fill .4s ease;
+  fill: EFEFEF;
+}
+
+/* line 359, ../sass/main.scss */
+#in:hover path {
+  fill: white;
+}
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 378, ../sass/main.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 397, ../sass/main.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 402, ../sass/main.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 411, ../sass/main.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 425, ../sass/main.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 436, ../sass/main.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 446, ../sass/main.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+/* line 454, ../sass/main.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 479, ../sass/main.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 487, ../sass/main.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 498, ../sass/main.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 507, ../sass/main.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 523, ../sass/main.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 537, ../sass/main.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 553, ../sass/main.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 559, ../sass/main.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 568, ../sass/main.scss */
+.clearfix {
+  *zoom: 1;
+}

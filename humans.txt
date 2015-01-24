@@ -1,0 +1,12 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jani Mäkelä -- UX Designer -- @janimakela
+
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JavaScript
+    Normalize.css, jQuery
